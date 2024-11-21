@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1029985839499",
+    "project_id": "luxe-loft",
+    "storage_bucket": "luxe-loft.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029985839499:android:350d0552158854a912e78e",
+        "android_client_info": {
+          "package_name": "com.example.luxe_loft"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeZzKkGFtEnQ5Uavu0inH3Z4Ytgy57nN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
