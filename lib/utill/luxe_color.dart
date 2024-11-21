@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 class LuxeColors {
   LuxeColors._();
 
-  static const Color brandPrimary = Color.fromRGBO(39, 118, 137, 1);
+  static const Color brandPrimary = Color.fromRGBO(26, 158, 183, 1);
   static const Color brandSecondry = Color.fromRGBO(255, 175, 0, 1);
+
+  static const Color brandAccentLightDark = Color.fromARGB(138, 98, 98, 97);
+  static const Color brandBlac = Color.fromARGB(137, 3, 3, 2);
 
   // static const Color brandPrimary75 = Color.fromRGBO(39, 118, 137, 0.7);
   // static const Color brandPrimary50 = Color.fromRGBO(39, 118, 137, 0.5);
@@ -21,7 +24,7 @@ class LuxeColors {
   // static const Color brandAccentAbyssalGreen = Color.fromRGBO(25, 97, 110, 1);
   // static const Color brandAccentSoftIvory = Color.fromRGBO(245, 244, 231, 1);
 
-  static const Color brandWhite = Color.fromRGBO(246, 247, 246, 1);
+  static const Color brandWhite = Colors.white;
   // static const Color brandRed = Color.fromARGB(255, 244, 67, 54);
   // static const Color brandYellow = Color(0xffF9D61E);
   // static const Color brandBlue = Color.fromARGB(255, 0, 170, 255);

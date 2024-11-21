@@ -1,8 +1,10 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:luxe_loft/screens/login_screen.dart';
 import 'package:luxe_loft/screens/onboarding_screen.dart';
-import 'package:luxe_loft/screens/splash_screen.dart';
+import 'package:luxe_loft/screens/otp_screen.dart';
+import 'package:luxe_loft/screens/signup_screen.dart';
 
 const double designSizeWidth = 390;
 const double designSizeHeight = 844;
@@ -29,11 +31,19 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         home: AnimatedSplashScreen(
-          duration: 3000,
+          duration: 300,
           splash: Image.asset('assets/images/logo.png'),
           splashTransition: SplashTransition.fadeTransition,
-          nextScreen: OnBoardingScreen(),
+          nextScreen: const OnBoardingScreen(),
         ),
+        // initialRoute: 'splashScreen',
+        routes: {
+          // 'splashScreen': (context) => const SplashScreen(),
+          '/onBoardingScreen': (context) => const OnBoardingScreen(),
+          '/loginScreen': (context) => const LoginScreen(),
+          '/otpScreen': (context) => const OtpScreen(),
+          '/signUpScreen': (context) => const SignUpScreen(),
+        },
       ),
     );
   }
