@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
           duration: 300,
           splash: Image.asset('assets/images/logo.png'),
           splashTransition: SplashTransition.fadeTransition,
-          nextScreen: const HomeScreen(),
+          nextScreen: const OnBoardingScreen(),
         ),
         // initialRoute: 'splashScreen',
         routes: {
