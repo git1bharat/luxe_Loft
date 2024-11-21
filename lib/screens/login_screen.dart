@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:luxe_loft/utill/luxe_color.dart';
 import 'package:luxe_loft/utill/luxe_typography.dart';
+import 'package:luxe_loft/widgets/social_icon_button.dart';
 import 'package:luxe_loft/widgets/submit_button.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -65,12 +66,15 @@ class _LoginScreenState extends State<LoginScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      _buildSocialIcon('assets/images/google.webp', 'Google'),
-                      const SizedBox(
-                        width: 15.2,
+                      const SocialIconButton(
+                          image: 'assets/images/google.webp',
+                          buttonName: 'Google'),
+                      SizedBox(
+                        width: 20.w,
                       ),
-                      _buildSocialIcon(
-                          'assets/images/facebook.png', 'facebook'),
+                      const SocialIconButton(
+                          image: 'assets/images/facebook.png',
+                          buttonName: 'facebook')
                     ],
                   ),
                   SizedBox(
@@ -117,38 +121,6 @@ Widget _buildTextField() {
           borderRadius: BorderRadius.circular(16.r),
         ),
       ),
-    ),
-  );
-}
-
-Widget _buildSocialIcon(String image, String buttonName) {
-  return Container(
-    padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 35),
-    decoration: BoxDecoration(
-      color: LuxeColors.brandWhite,
-      borderRadius: BorderRadius.circular(12),
-      boxShadow: [
-        BoxShadow(
-          color: Colors.black.withOpacity(0.1),
-          spreadRadius: 1,
-          blurRadius: 3,
-          offset: const Offset(0, 3),
-        ),
-      ],
-    ),
-    child: Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Image.asset(
-          image,
-          width: 30,
-          height: 30,
-        ),
-        Text(
-          buttonName,
-          style: LuxeTypo.titleSmall,
-        )
-      ],
     ),
   );
 }
